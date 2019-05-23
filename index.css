@@ -1,8 +1,18 @@
 body{
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
   color: white;
   background-color: black;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
 #main {
   width: 60vw;
   margin: auto;
@@ -64,4 +74,3 @@ h1 {
   color: #fff;
   transform: translateY(-7px);
 }
-
