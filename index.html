@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="jquerysession.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,20 +20,175 @@
 
     <div id="main" class="container">
       <header>
-        <h1>League of Legends Quote Machine</h1>
+        <h1>League of Legends Quote Machine</h1> <br>
       </header>
       <div id="quote-box">
         <p id="text"></p> 
-        <p id="author">Loading...<i class="fas fa-pencil-alt"></i></i> </p>
-      
-        <div id="new_share_b">
+        <!-- <p id="author">Loading...<i class="fas fa-pencil-alt"></i></i> </p> -->
+        <form id="guess-form">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Which Champion Says This?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Aatrox</option>
+              <option>Ahri</option>
+              <option>Akali</option>
+              <option>Alistar</option>
+              <option>Amumu</option>
+              <option>Anivia</option>
+              <option>Annie</option>
+              <option>Ashe</option>
+              <option>AurelionSol</option>
+              <option>Azir</option>
+              <option>Bard</option>
+              <option>Blitzcrank</option>
+              <option>Brand</option>
+              <option>Braum</option>
+              <option>Caitlyn</option>
+              <option>Camille</option>
+              <option>Cassiopeia</option>
+              <option>Chogath</option>
+              <option>Corki</option>
+              <option>Darius</option>
+              <option>Diana</option>
+              <option>DrMundo</option>
+              <option>Draven</option>
+              <option>Ekko</option>
+              <option>Elise</option>
+              <option>Evelynn</option>
+              <option>Ezreal</option>
+              <option>Fiddlesticks</option>
+              <option>Fiora</option>
+              <option>Fizz</option>
+              <option>Galio</option>
+              <option>Gangplank</option>
+              <option>Garen</option>
+              <option>Gnar</option>
+              <option>Gragas</option>
+              <option>Graves</option>
+              <option>Hecarim</option>
+              <option>Heimerdinger</option>
+              <option>Illaoi</option>
+              <option>Irelia</option>
+              <option>Ivern</option>
+              <option>Janna</option>
+              <option>JarvanIV</option>
+              <option>Jax</option>
+              <option>Jayce</option>
+              <option>Jhin</option>
+              <option>Jinx</option>
+              <option>Kaisa</option>
+              <option>Kalista</option>
+              <option>Karma</option>
+              <option>Karthus</option>
+              <option>Kassadin</option>
+              <option>Katarina</option>
+              <option>Kayle</option>
+              <option>Kayn</option>
+              <option>Kennen</option>
+              <option>Khazix</option>
+              <option>Kindred</option>
+              <option>Kled</option>
+              <option>KogMaw</option>
+              <option>Leblanc</option>
+              <option>LeeSin</option>
+              <option>Leona</option>
+              <option>Lissandra</option>
+              <option>Lucian</option>
+              <option>Lulu</option>
+              <option>Lux</option>
+              <option>Malphite</option>
+              <option>Malzahar</option>
+              <option>Maokai</option>
+              <option>MasterYi</option>
+              <option>MissFortune</option>
+              <option>Mordekaiser</option>
+              <option>Morgana</option>
+              <option>Nami</option>
+              <option>Nasus</option>
+              <option>Nautilus</option>
+              <option>Neeko</option>
+              <option>Nidalee</option>
+              <option>Nocturne</option>
+              <option>Nunu</option>
+              <option>Olaf</option>
+              <option>Orianna</option>
+              <option>Ornn</option>
+              <option>Pantheon</option>
+              <option>Poppy</option>
+              <option>Pyke</option>
+              <option>Quinn</option>
+              <option>Rakan</option>
+              <option>Rammus</option>
+              <option>Reksai</option>
+              <option>Renekton</option>
+              <option>Rengar</option>
+              <option>Riven</option>
+              <option>Rumble</option>
+              <option>Ryze</option>
+              <option>Sejuani</option>
+              <option>Shaco</option>
+              <option>Shen</option>
+              <option>Shyvana</option>
+              <option>Singed</option>
+              <option>Sion</option>
+              <option>Sivir</option>
+              <option>Skarner</option>
+              <option>Sona</option>
+              <option>Soraka</option>
+              <option>Swain</option>
+              <option>Sylas</option>
+              <option>Syndra</option>
+              <option>TahmKench</option>
+              <option>Taliyah</option>
+              <option>Talon</option>
+              <option>Taric</option>
+              <option>Teemo</option>
+              <option>Thresh</option>
+              <option>Tristana</option>
+              <option>Trundle</option>
+              <option>Tryndamere</option>
+              <option>TwistedFate</option>
+              <option>Twitch</option>
+              <option>Udyr</option>
+              <option>Urgot</option>
+              <option>Varus</option>
+              <option>Vayne</option>
+              <option>Veigar</option>
+              <option>Velkoz</option>
+              <option>Vi</option>
+              <option>Viktor</option>
+              <option>Vladimir</option>
+              <option>Volibear</option>
+              <option>Warwick</option>
+              <option>Wukong</option>
+              <option>Xayah</option>
+              <option>Xerath</option>
+              <option>XinZhao</option>
+              <option>Yasuo</option>
+              <option>Yorick</option>
+              <option>Yuumi</option>
+              <option>Zac</option>
+              <option>Zed</option>
+              <option>Ziggs</option>
+              <option>Zilean</option>
+              <option>Zoe</option>
+              <option>Zyra</option>
+            </select>
+          </div>
+          <button id="new-guess" class="btn btn-primary mb-2" >Submit</button>
+        </form>
+
+        <!-- <div id="new_share_b">
           <button id="new-quote">New Quote</button> 
           <div id="tweet-quote">
             <a href="https://twitter.com/intent/tweet?text='" target="_blank">
               <i class="fab fa-twitter fa-3x"></i>
             </a>
           </div>
-        </div> <!-- new_share_b -->
+        </div>  -->
+        <!-- new_share_b -->
+      <p>Streak:</p>
+      <p id="streak-count"></p>
       </div> <!-- new-quote -->
     </div> <!-- container -->
 
