@@ -3,7 +3,7 @@ body{
   position: relative;
   margin: 0;
   color: white;
-  background-color: black;
+  background-image: url("background.jpg");
 }
 
 footer {
